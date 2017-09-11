@@ -34,7 +34,7 @@
 		}
 
 		if ($scope.arrayofDishes.length = 1 && $scope.arrayofDishes[0].valueOf() == "" ) {
-			$scope.message = "Please enter data first";
+			$scope.message = "Please enter data first!";
 		}
 		
 		return $scope.message
