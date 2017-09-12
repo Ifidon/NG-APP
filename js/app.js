@@ -9,9 +9,7 @@
 
 		$scope.dishList="";
 		$scope.message = "";
-		$scope.arrayofDishes=[];
-		// $scope.numberofDishes = $scope.dishList.split().length
-		
+		//$scope.arrayofDishes=[];		
 
 	$scope.returnMessage = function() {
 		
@@ -21,16 +19,17 @@
 
 		console.log($scope.arrayofDishes[0].valueOf());
 
-		// if ($scope.arrayofDishes.length = 1 && $scope.arrayofDishes[0].valueOf() == "" ) {
-		// 	$scope.message = "Please enter data first";
-		// }
-
 		if ($scope.arrayofDishes.length <= 3) {
 			 $scope.message = "Enjoy!";
 			}
 		
 		else if ($scope.arrayofDishes.length > 3){
 			$scope.message = "Too Much!";
+		}
+		
+		else {
+			
+			$scope.message = "Please enter data first!";
 		}
 
 		if ($scope.arrayofDishes.length = 1 && $scope.arrayofDishes[0].valueOf() == "" ) {
